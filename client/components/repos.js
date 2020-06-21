@@ -5,7 +5,7 @@ const Repos = (props) => {
   const { user } = useParams()
   return (
     <div>
-      <div>{JSON.stringify(props)}</div>
+      {/* <div>{JSON.stringify(props)}</div> */}
       {props.repos.map((repo) => (
         <div className="bg-indigo-600 text-whitr rounded p-2 mb-2" key={repo.id}>
           <Link to={`/${user}/${repo.name}`}>{repo.name}</Link>
